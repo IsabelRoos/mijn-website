@@ -1,0 +1,857 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+Body {
+  /* background-color: rgb(255, 254, 247); */
+  background-color: white;
+  font-size: 16px;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  cursor: grab;
+  position: relative;
+}
+
+.background-image-div {
+  background-image: url(images/bruiloft-saint-tropez/wedding-s-t-49.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.image-styling:hover {
+  transform: scale(1.2);
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+/* Container one */
+.container-one {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Start dropdown menu */
+/* Start Animation */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+.dropdown-2:hover .dropdown-menu-2--animated {
+  display: block;
+  -webkit-animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* End Animation */
+/* Default: hide hamburger for desktop */
+.hamburger {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+/* Start Navigation Bar Styling */
+.navigation-2-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+.dropdown-2 {
+  list-style: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: all 0.8s linear;
+}
+.container-navigation-1 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-2 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-3 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-4 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-5 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-6 {
+  display: flex;
+}
+
+.button-style-navigation {
+  font-size: 21px;
+  text-decoration: none;
+  color: rgb(9, 27, 43);
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+  background: none;
+  border: none;
+}
+/* End Navigation Bar Styling */
+/* Start List-item Styling */
+.dropdown-menu-2 {
+  background-color: white;
+  width: 180px;
+  position: absolute;
+  perspective: 1000px;
+  display: none;
+  border-radius: 20px;
+  border: solid rgb(9, 27, 43) 1px;
+  font-family: "Playfair Display", serif;
+}
+
+.photography-dropdown {
+  margin-left: -30px;
+}
+.SEO-dropdown {
+  margin-left: -73px;
+}
+.about-dropdown {
+  margin-left: -58px;
+}
+
+.navigation-listitem {
+  list-style: none;
+  text-align: center;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 14px;
+}
+
+.dropdown-items-2 {
+  display: contents;
+}
+.dropdown-items-2:link,
+.dropdown-items-2:visited {
+  color: rgb(7, 22, 34);
+  font-size: 15px;
+  text-decoration: none;
+}
+.dropdown-items-2:hover,
+.dropdown-items-2:active {
+  font-weight: bold;
+}
+/* End dropdown navigation */
+/* end container one */
+
+/* ------------------------------------------------------------------------------ */
+
+/* Container two */
+.container-two {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 250px;
+  animation: transitionIn 0.75s;
+}
+
+@media (min-width: 768px) {
+  .container-two {
+    background-attachment: fixed;
+  }
+}
+
+.text-container {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  text-align: left;
+  color: rgb(9, 27, 43);
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  line-height: 1.6;
+  width: 50%;
+  margin-left: 22.3%;
+}
+
+.h1-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 33px;
+  color: rgb(9, 27, 43);
+  margin-bottom: 20px;
+}
+
+.h2-styling {
+  font-family: "DM Serif Display", serif;
+  color: rgb(9, 27, 43);
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+.h3-styling {
+  font-family: "DM Serif Display", serif;
+  color: rgb(198, 104, 67);
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+p {
+  margin-bottom: 20px;
+}
+.wedding-photo {
+  width: 50%;
+  height: auto;
+  border: solid 2px rgb(9, 27, 43);
+}
+.introduction-highlight {
+  font-weight: 500;
+  background-color: rgb(254, 239, 233);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.provence-map {
+  width: 50%;
+  height: auto;
+}
+
+.provence-map:hover {
+  transform: scale(3);
+}
+
+.button {
+  padding: 40px;
+  text-align: center;
+}
+
+.comparison-container {
+  margin: 2.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.comparison-container .column {
+  background-color: rgb(254, 239, 233);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.comparison-container h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.comparison-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.comparison-container ul li {
+  position: relative;
+  margin: 0.5rem 0;
+  padding-left: 1.4rem;
+  line-height: 1.4;
+}
+
+.comparison-container ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgb(9, 27, 43);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .comparison-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* //// <ul> met foto's */
+.comparison-container-2 {
+  margin: 2.5rem 0;
+}
+
+.camera-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem; /* ruimte tussen de items */
+}
+
+.camera-item p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.foto-camera-lijstje {
+  width: 100%; /* vult het blok volledig, behoudt aspect ratio */
+  height: auto;
+  border: 1.5px solid rgb(9, 27, 43);
+  border-radius: 8px;
+  display: block;
+}
+
+.prijs-lijst {
+  background-color: rgb(254, 239, 233);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.prijs-lijst ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgb(9, 27, 43);
+  font-weight: bold;
+}
+
+.prijs-lijst ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.prijs-lijst ul li {
+  position: relative;
+  margin: 0.5rem 0;
+  padding-left: 1.4rem;
+  line-height: 1.4;
+}
+/* ///////////////////////////////////////////////////////// */
+/* Container Three - Images */
+.container-three {
+  padding: 80px 0;
+  animation: transitionIn 0.75s;
+}
+
+.photos-introduction {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 70px;
+  font-size: 18px;
+  color: rgb(9, 27, 43);
+  line-height: 1.5;
+}
+
+/* Slideshow container - within container three*/
+.portfolio-container-three {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* The outer div */
+.portfolio-div-three {
+  width: 100vw;
+  height: cover;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* The moving track */
+.image-track-three {
+  display: flex;
+  width: calc(550px * 110);
+  transition: transform 1s ease-in-out;
+}
+
+/* Individual image styling */
+.image-track-three img {
+  width: auto;
+  height: 550px;
+  object-fit: cover;
+  flex-shrink: 0;
+  padding: 0.2% 0% 0.2% 0.01%;
+}
+
+/* Navigation buttons */
+.prev-btn-three,
+.next-btn-three {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(193, 224, 255, 0.699);
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-btn-three {
+  left: 10px;
+}
+.next-btn-three {
+  right: 10px;
+}
+
+.prev-btn-three:hover,
+.next-btn-three:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.review {
+  font-family: "Playfair Display", serif;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: rgb(9, 27, 43);
+  line-height: 1.5;
+}
+.review-link:link,
+.review-link:visited {
+  font-size: 18px;
+  color: rgb(9, 27, 43);
+  text-decoration: underline;
+}
+.review-link:hover,
+.review-link:active {
+  text-decoration: none;
+}
+
+/* Container four - Footer */
+.container-four {
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+  color: rgb(9, 27, 43);
+  padding-top: 30px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop-style-1 {
+  display: flex;
+  margin-left: 24%;
+  margin-right: 10%;
+}
+.desktop-style-2 {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.image-one {
+  width: 20px;
+  height: 20px;
+}
+
+.image-two {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.image-three {
+  width: 20px;
+  height: 20px;
+}
+
+.review {
+  font-family: "Playfair Display", serif;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: rgb(9, 27, 43);
+  line-height: 1.5;
+}
+.review-link:link,
+.review-link:visited {
+  font-size: 18px;
+  color: rgb(9, 27, 43);
+  text-decoration: underline;
+}
+.review-link:hover,
+.review-link:active {
+  text-decoration: none;
+}
+/* ........................................................................................................................... */
+
+/* Phone Screen settings */
+@media screen and (max-width: 481px) {
+  /* dropdown menu start */
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+  .container-one {
+    background-image: url(images/bruiloft-saint-tropez/wedding-s-t-46.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 600px;
+    position: relative;
+  }
+
+  .background-image-div {
+    background-image: none;
+  }
+
+  /* Mobile - End Animation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - Start Navigation Bar Styling */
+  .navigation-2-container {
+    display: none;
+  }
+
+  /* Hamburger lines */
+  .hamburger {
+    width: 30px;
+    height: 25px;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    bottom: 20px; /* distance from bottom edge of container-one */
+    left: 20px; /* distance from left edge of container-one */
+    z-index: 1000; /* ensure it’s above other elements */
+  }
+  /* Hamburger button */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.4s ease;
+    transform-origin: center;
+  }
+
+  /* Hamburger active (X) state */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10.5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10.5px);
+  }
+
+  /* Mobile menu panel */
+  .mobile-menu {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    /* You can adjust width here */
+    width: 90%;
+    position: relative;
+    z-index: 9999;
+  }
+
+  /* When open, expand max-height to show menu */
+  .mobile-menu.open {
+    max-height: 1500px; /* or large enough to show full menu */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* menu items styling remain same */
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submenu-toggle {
+    font-family: "Playfair Display", serif;
+    color: rgb(9, 27, 43);
+    font-weight: bold;
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .mobile-menu a {
+    font-family: "Playfair Display", serif;
+    color: rgb(9, 27, 43);
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+  }
+  .menu-item-home a,
+  .menu-item-cv a {
+    display: block;
+    font-size: 20px;
+    color: rgb(9, 27, 43);
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .mobile-menu,
+  .mobile-menu ul,
+  .mobile-menu li,
+  .mobile-menu a {
+    text-align: left;
+  }
+  /* Submenu styling */
+  .submenu {
+    display: none;
+    padding-left: 15px;
+  }
+
+  .submenu.open {
+    display: block;
+  }
+  /* Mobile - End navigation */
+  /* --------------------------------------------------------------------------------------------------- */
+  /* Mobile - beginning container two */
+  .container-two {
+    background-color: white;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 10%;
+    animation: transitionIn 0.75s;
+  }
+
+  .text-container {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(9, 27, 43);
+    background-color: white;
+    border: none;
+    padding: 30px;
+    line-height: 1.6;
+    width: 80%;
+    margin-left: 2.3%;
+    margin-right: 1%;
+  }
+
+  .h1-styling {
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    color: rgb(9, 27, 43);
+    margin-bottom: 20px;
+  }
+  .h2-styling {
+    font-family: "DM Serif Display", serif;
+    font-size: 24px;
+    color: rgb(9, 27, 43);
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+  .wedding-photo {
+    width: 100%;
+    height: auto;
+    border: solid 2px rgb(9, 27, 43);
+  }
+  .provence-map {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Mobile - end container two */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - beginning container three */
+  .container-three {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* Slideshow container */
+  .portfolio-container-two {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* The outer div */
+  .portfolio-div-two {
+    width: 100vw;
+    height: cover;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* The moving track */
+  .image-track-two {
+    display: flex;
+    width: calc(450px * 104); /* Adjust this based on the number of images */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Individual image styling */
+  .image-track-two img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+    padding: 1.5% 0 1% 0.5%;
+  }
+
+  /* Navigation buttons */
+  .prev-btn-two,
+  .next-btn-two {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(236, 220, 200, 0.5);
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    border-radius: 50%;
+  }
+
+  .prev-btn-two {
+    left: 10px;
+  }
+  .next-btn-two {
+    right: 10px;
+  }
+
+  .prev-btn-two:hover,
+  .next-btn-two:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .review {
+    font-family: "Playfair Display", serif;
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(9, 27, 43);
+    line-height: 1.5;
+  }
+  /* Mobile - end containter three */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - beginning footer */
+
+  .container-four {
+    font-family: "DM Serif Display", serif;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(9, 27, 43);
+    /* background-color: rgb(255, 254, 248); */
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  .desktop-style-1,
+  .desktop-style-2 {
+    display: block;
+    margin: none;
+  }
+
+  .mobile-paragraph-styling-1 {
+    margin-bottom: 5%;
+    display: block;
+    margin-left: -70px;
+  }
+  .mobile-image-styling {
+    flex-direction: row;
+    align-items: center;
+    display: block;
+  }
+  .mobile-paragraph-styling-2 {
+    margin-bottom: 5%;
+    display: block;
+  }
+
+  .image-one {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .image-two {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .image-three {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+}

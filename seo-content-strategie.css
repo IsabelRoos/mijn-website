@@ -1,0 +1,616 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+Body {
+  /* background-color: rgb(255, 254, 247); */
+  background-color: white;
+  font-size: 16px;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  cursor: grab;
+  position: relative;
+  margin: auto;
+}
+
+.background-image-div {
+  background-image: url(images/port-grimaud.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/* container one */
+.container-one {
+  width: 100%;
+  text-align: center;
+}
+
+/* Start dropdown menu */
+/* Start Animation */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+.dropdown-2:hover .dropdown-menu-2--animated {
+  display: block;
+  -webkit-animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* End Animation */
+/* Default: hide hamburger for desktop */
+.hamburger {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+/* Start Navigation Bar Styling */
+.navigation-2-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+.dropdown-2 {
+  list-style: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: all 0.8s linear;
+}
+.container-navigation-1 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-2 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-3 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-4 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-5 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-6 {
+  display: flex;
+}
+
+.button-style-navigation {
+  font-size: 21px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+  background: none;
+  border: none;
+}
+/* End Navigation Bar Styling */
+/* Start List-item Styling */
+.dropdown-menu-2 {
+  background-color: white;
+  width: 180px;
+  position: absolute;
+  perspective: 1000px;
+  display: none;
+  border-radius: 20px;
+  border: solid rgb(88, 65, 37) 1px;
+  font-family: "Playfair Display", serif;
+}
+
+.photography-dropdown {
+  margin-left: -30px;
+}
+.SEO-dropdown {
+  margin-left: -73px;
+}
+.about-dropdown {
+  margin-left: -58px;
+}
+
+.navigation-listitem {
+  list-style: none;
+  text-align: center;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 14px;
+}
+
+.dropdown-items-2 {
+  display: contents;
+}
+.dropdown-items-2:link,
+.dropdown-items-2:visited {
+  color: rgb(88, 65, 37);
+  font-size: 15px;
+  text-decoration: none;
+}
+.dropdown-items-2:hover,
+.dropdown-items-2:active {
+  font-weight: bold;
+}
+/* End dropdown navigation */
+/* end container one */
+/* //////////////////////////////////////////////////////////////////////////// */
+/* Container two - part with text and slider */
+.container-two {
+  width: 100%;
+  padding-top: 8%;
+  padding-bottom: 20%;
+  animation: transitionIn 0.75s;
+  background-attachment: fixed;
+}
+
+.text-container {
+  font-family: "Playfair Display", serif;
+  /* color: rgb(255, 254, 248); */
+  color: rgb(50, 36, 20);
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 60px;
+  margin-left: 20%;
+  width: 60%;
+  background-color: white;
+  padding: 50px;
+  line-height: 1.6;
+}
+.button {
+  padding: 20px;
+  text-align: center;
+}
+.h1-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: rgb(50, 36, 20);
+}
+.h2-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: rgb(50, 36, 20);
+}
+.h3-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: rgb(182, 204, 226);
+}
+p {
+  margin-bottom: 20px;
+}
+.introduction-highlight {
+  font-weight: 500;
+  background-color: rgb(231, 241, 251);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.seo-article-image {
+  height: auto;
+  width: 30%;
+  margin-bottom: 5px;
+  float: left;
+  padding-right: 30px;
+}
+.seo-article-image-horizontal {
+  height: auto;
+  width: 40%;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
+.seo-article-image-horizontal-2 {
+  height: auto;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.article-link:link,
+.article-link:visited {
+  font-size: 18px;
+  color: rgb(78, 50, 32);
+  text-decoration: underline;
+  font-family: "Playfair Display", serif;
+}
+
+.article-link:hover,
+.article-link:active {
+  /* font-weight: bold; */
+  text-decoration: none;
+}
+
+.list-styling {
+  margin: 4%;
+  list-style: upper-roman;
+  background-color: rgb(254, 239, 233);
+  padding: 10px 0 10px 40px;
+}
+.list-item-style {
+  margin-bottom: 2%;
+  font-size: 18px;
+}
+.list-styling-two {
+  margin: 4%;
+  list-style: disc;
+  background-color: rgb(254, 239, 233);
+  padding: 10px 0 10px 40px;
+}
+.review {
+  margin-top: 40px;
+  background-color: rgb(231, 241, 251);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* container three - footer */
+.container-three {
+  font-family: "DM Serif Display", serif;
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+  color: rgb(88, 65, 37);
+  padding-top: 30px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop-style-1 {
+  display: flex;
+  margin-left: 24%;
+  margin-right: 10%;
+}
+.desktop-style-2 {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.image-one {
+  width: 20px;
+  height: 20px;
+}
+
+.image-two {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.image-three {
+  width: 20px;
+  height: 20px;
+}
+
+/* .................................................................................................... */
+
+/* Phone Screen settings */
+@media screen and (max-width: 481px) {
+  /* Mobile Start Animation */
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+  .dropdown-2:hover .dropdown-menu-2--animated {
+    display: block;
+    -webkit-animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .container-one {
+    background-image: url(images/picasso-drawing-pen.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+  }
+  .background-image-div {
+    background-image: none;
+  }
+  /* Mobile - End Animation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - Start Navigation Bar Styling */
+  .navigation-2-container {
+    display: none;
+  }
+
+  /* Hamburger lines */
+  .hamburger {
+    width: 30px;
+    height: 25px;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    bottom: 20px; /* distance from bottom edge of container-one */
+    left: 20px; /* distance from left edge of container-one */
+    z-index: 1000; /* ensure it’s above other elements */
+  }
+  /* Hamburger button */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background: rgb(78, 50, 32);
+    border-radius: 3px;
+    transition: all 0.4s ease;
+    transform-origin: center;
+  }
+
+  /* Hamburger active (X) state */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10.5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10.5px);
+  }
+
+  /* Mobile menu panel */
+  .mobile-menu {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    /* You can adjust width here */
+    width: 90%;
+    position: relative;
+    z-index: 9999;
+  }
+
+  /* When open, expand max-height to show menu */
+  .mobile-menu.open {
+    max-height: 1500px; /* or large enough to show full menu */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* menu items styling remain same */
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submenu-toggle {
+    font-family: "Playfair Display", serif;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .mobile-menu a {
+    font-family: "Playfair Display", serif;
+    color: rgb(78, 50, 32);
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+  }
+  .menu-item-home a,
+  .menu-item-cv a {
+    display: block;
+    font-size: 20px;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .mobile-menu,
+  .mobile-menu ul,
+  .mobile-menu li,
+  .mobile-menu a {
+    text-align: left;
+  }
+  /* Submenu styling */
+  .submenu {
+    display: none;
+    padding-left: 15px;
+  }
+
+  .submenu.open {
+    display: block;
+  }
+  /* Mobile - End navigation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - beginning container two */
+
+  .container-two {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    padding-top: 12%;
+    padding-bottom: 20%;
+    animation: transitionIn 0.75s;
+    background-attachment: fixed;
+  }
+
+  .text-container {
+    font-family: "Playfair Display", serif;
+    color: rgb(69, 75, 54);
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5;
+    width: 98%;
+    margin-top: 3px;
+    margin-left: 1%;
+    background-color: white;
+    border: none;
+    padding: 30px;
+    line-height: 1.6;
+  }
+  .h1-styling {
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(69, 75, 54);
+  }
+  .h2-styling {
+    font-family: "DM Serif Display", serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: rgb(88, 65, 37);
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .list-styling {
+    margin: 4%;
+    list-style: upper-roman;
+    background-color: rgb(254, 239, 233);
+    padding: 10px 20px 10px 40px;
+  }
+  .list-item-style {
+    margin-bottom: 5%;
+    font-size: 18px;
+  }
+  .seo-article-image {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .seo-article-image-horizontal {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .seo-article-image-horizontal-2 {
+    height: auto;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  /* Mobile - end container two */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - beginning footer */
+
+  .container-three {
+    font-family: "DM Serif Display", serif;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(88, 65, 37);
+    /* background-color: rgb(255, 254, 248); */
+    background-color: rgb(255, 255, 252);
+    padding-top: 50px;
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  .desktop-style-1,
+  .desktop-style-2 {
+    display: block;
+    margin: none;
+  }
+
+  .mobile-paragraph-styling-1 {
+    margin-bottom: 5%;
+    display: block;
+    margin-left: -70px;
+  }
+  .mobile-image-styling {
+    flex-direction: row;
+    align-items: center;
+    display: block;
+  }
+  .mobile-paragraph-styling-2 {
+    margin-bottom: 5%;
+    display: block;
+  }
+
+  .image-one {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .image-two {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .image-three {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+}
+
+/* @media screen and (max-width: 992px) {
+} */

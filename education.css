@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+Body {
+  /* background-color: rgb(255, 254, 247); */
+  background-color: white;
+  font-size: 16px;
+  font-family: "DM Serif Display", serif;
+  color: rgb(88, 65, 37);
+  text-align: center;
+  cursor: grab;
+}
+
+.background-image-div {
+  background-image: url(images/Swellemdam-stilllife.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Container one */
+.container-one {
+  text-align: center;
+  margin: auto;
+}
+
+.image-styling {
+  width: 140px;
+  height: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 2px rgb(88, 65, 37);
+  border-radius: 20px;
+}
+
+.h1-style {
+  font-family: "DM Serif Display", serif;
+  color: rgb(88, 65, 37);
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+/* Start dropdown menu */
+/* Start Animation */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+.dropdown-2:hover .dropdown-menu-2--animated {
+  display: block;
+  -webkit-animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* End Animation */
+/* Default: hide hamburger for desktop */
+.hamburger {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+/* Start Navigation Bar Styling */
+.navigation-2-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-2 {
+  list-style: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: all 0.8s linear;
+}
+.container-navigation-1 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-2 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-3 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-4 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-5 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-6 {
+  display: flex;
+}
+
+.button-style-navigation {
+  font-size: 21px;
+  text-decoration: none;
+  color: rgb(88, 65, 37);
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+  background: none;
+  border: none;
+}
+/* End Navigation Bar Styling */
+/* Start List-item Styling */
+.dropdown-menu-2 {
+  background-color: white;
+  width: 180px;
+  position: absolute;
+  perspective: 1000px;
+  display: none;
+  border-radius: 20px;
+  border: solid rgb(88, 65, 37) 1px;
+  font-family: "Playfair Display", serif;
+}
+
+.photography-dropdown {
+  margin-left: -30px;
+}
+.SEO-dropdown {
+  margin-left: -73px;
+}
+.about-dropdown {
+  margin-left: -58px;
+}
+
+.navigation-listitem {
+  list-style: none;
+  text-align: center;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 14px;
+}
+
+.dropdown-items-2 {
+  display: contents;
+}
+.dropdown-items-2:link,
+.dropdown-items-2:visited {
+  color: rgb(88, 65, 37);
+  font-size: 15px;
+  text-decoration: none;
+}
+.dropdown-items-2:hover,
+.dropdown-items-2:active {
+  font-weight: bold;
+}
+/* End dropdown navigation */
+/* end container one */
+/* ----------------------------------------------------------------------------------- */
+
+/* container two */
+.container-two {
+  width: 100%;
+  padding-top: 160px;
+  padding-bottom: 50px;
+  animation: transitionIn 0.75s;
+}
+
+@media (min-width: 768px) {
+  .container-two {
+    background-attachment: fixed;
+  }
+}
+
+.text-container {
+  font-family: "Playfair Display", serif;
+  color: rgb(88, 65, 37);
+  font-size: 18px;
+  text-align: left;
+  background-color: white;
+  padding: 50px;
+  width: 50%;
+  margin-left: 22%;
+  margin-bottom: 200px;
+}
+
+.h2-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+.introduction-paragraph-styling {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style: circle;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+
+.h3-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.list-style {
+  list-style: none;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.list-style:last-child {
+  margin-bottom: 0;
+}
+
+.list-item {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.collector-link:link,
+.collector-link:visited,
+.kim-majorel-link:link,
+.kim-majorel-link:visited {
+  font-size: 18px;
+  color: rgb(88, 65, 37);
+  font-style: italic;
+  text-decoration: none;
+}
+
+.collector-link:hover,
+.collector-link:active,
+.kim-majorel-link:hover,
+.kim-majorel-link:active {
+  text-decoration: underline;
+}
+
+.kim-majorel-hommes {
+  height: auto;
+  width: 230px;
+  max-width: 100%;
+  border: solid 2px rgb(88, 65, 37);
+  float: right;
+  margin: 20px;
+  border-radius: 5%;
+}
+.abeille-vid {
+  height: auto;
+  width: 700px;
+  max-width: 100%;
+  border: solid 2px rgb(88, 65, 37);
+}
+
+/* container three - footer */
+.container-three {
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+  color: rgb(88, 65, 37);
+  padding-top: 30px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop-style-1 {
+  display: flex;
+  margin-left: 24%;
+  margin-right: 10%;
+}
+.desktop-style-2 {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.image-one {
+  width: 20px;
+  height: 20px;
+}
+
+.image-two {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.image-three {
+  width: 20px;
+  height: 20px;
+}
+
+/* .................................................................................................... */
+
+/* Phone Screen settings */
+@media screen and (max-width: 481px) {
+  /* dropdown menu start */
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+
+  .container-one {
+    background-image: url(images/Swellemdam-stilllife.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    position: relative;
+  }
+  .h1-style {
+    margin-bottom: 240px;
+    color: white;
+    text-shadow: none;
+  }
+  .image-styling {
+    width: 120px;
+    height: auto;
+    border-radius: 0;
+    border: solid 2px white;
+  }
+  .background-image-div {
+    background-image: none;
+  }
+  /* Mobile - End Animation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - Start Navigation Bar Styling */
+  .navigation-2-container {
+    display: none;
+  }
+
+  /* Hamburger lines */
+  .hamburger {
+    width: 30px;
+    height: 25px;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    bottom: 20px; /* distance from bottom edge of container-one */
+    left: 20px; /* distance from left edge of container-one */
+    z-index: 1000; /* ensure it’s above other elements */
+  }
+  /* Hamburger button */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+    transform-origin: center;
+  }
+
+  /* Hamburger active (X) state */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10.5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10.5px);
+  }
+
+  /* Mobile menu panel */
+  .mobile-menu {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    /* You can adjust width here */
+    width: 90%;
+    position: relative;
+    z-index: 9999;
+  }
+
+  /* When open, expand max-height to show menu */
+  .mobile-menu.open {
+    max-height: 1500px; /* or large enough to show full menu */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* menu items styling remain same */
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submenu-toggle {
+    font-family: "Playfair Display", serif;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .mobile-menu a {
+    font-family: "Playfair Display", serif;
+    color: rgb(78, 50, 32);
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+  }
+  .menu-item-home a,
+  .menu-item-cv a {
+    display: block;
+    font-size: 20px;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .mobile-menu,
+  .mobile-menu ul,
+  .mobile-menu li,
+  .mobile-menu a {
+    text-align: left;
+  }
+  /* Submenu styling */
+  .submenu {
+    display: none;
+    padding-left: 15px;
+  }
+
+  .submenu.open {
+    display: block;
+  }
+  /* Mobile - End navigation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - Beginning container two */
+  .container-two {
+    background-image: none;
+    background-color: white;
+    background-position: bottom;
+    background-size: 500px;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    animation: transitionIn 0.75s;
+  }
+
+  .text-container {
+    font-family: "Playfair Display", serif;
+    color: rgb(88, 65, 37);
+    font-size: 18px;
+    text-align: left;
+    background-color: white;
+    border: none;
+    padding: 30px;
+    width: 85%;
+    margin-left: 0.5%;
+    margin-bottom: 80px;
+  }
+
+  .h2-styling {
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .h3-styling {
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .list-style {
+    list-style: none;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+
+  .list-item {
+    margin-bottom: 20px;
+  }
+
+  .collector-link:link,
+  .collector-link:visited {
+    font-size: 18px;
+    color: rgb(88, 65, 37);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .collector-link:hover,
+  .collector-link:active {
+    /* text-decoration: underline; */
+    text-transform: uppercase;
+  }
+
+  .kim-majorel-hommes {
+    height: auto;
+    width: 200px;
+    max-width: 100%;
+    border: solid 2px rgb(88, 65, 37);
+    float: right;
+    margin-right: -5px;
+    border-radius: 5%;
+  }
+  .abeille-vid {
+    height: auto;
+    width: 700px;
+    max-width: 100%;
+    border: solid 2px rgb(88, 65, 37);
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  /* Mobile - end container three */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - beginning footer */
+
+  .container-three {
+    font-family: "DM Serif Display", serif;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(88, 65, 37);
+    /* background-color: rgb(255, 255, 252); */
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  .desktop-style-1,
+  .desktop-style-2 {
+    display: block;
+    margin: none;
+  }
+
+  .mobile-paragraph-styling-1 {
+    margin-bottom: 5%;
+    display: block;
+    margin-left: -70px;
+  }
+  .mobile-image-styling {
+    flex-direction: row;
+    align-items: center;
+    display: block;
+  }
+  .mobile-paragraph-styling-2 {
+    margin-bottom: 5%;
+    display: block;
+  }
+
+  .image-one {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .image-two {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .image-three {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+}
+
+/* .................................................................................................... */
+
+@media screen and (max-width: 992px) {
+}

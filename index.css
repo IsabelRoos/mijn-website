@@ -1,0 +1,1022 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+Body {
+  background-color: white;
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  font-weight: 300;
+  text-align: center;
+  cursor: grab;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+/* font-family: 'Noto Serif Display', serif;
+font-family: 'Playfair Display', serif; */
+.background-image-div {
+  background-image: url(images/swim-jump-pentax67.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* -------------------------------------------------------------------------------------------------- */
+/* container one */
+.container-one {
+  text-align: center;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.page-title-style {
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  color: white;
+  padding-top: 2%;
+  margin-bottom: 10px;
+  font-size: 50px;
+  letter-spacing: 0.02cm;
+}
+.ismaro-colour {
+  color: white;
+}
+.stripe-colour {
+  color: white;
+  text-shadow: none;
+}
+/* Start dropdown menu */
+/* Start Animation */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+.dropdown-2:hover .dropdown-menu-2--animated {
+  display: block;
+  -webkit-animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* End Animation */
+/* Start Navigation Bar Styling */
+/* Default: hide hamburger for desktop */
+.hamburger {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+.navigation-2-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-2 {
+  list-style: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+  transition: all 0.8s linear;
+  align-items: center;
+}
+.container-navigation-1 {
+  display: flex;
+  margin-right: 10%;
+}
+.container-navigation-2 {
+  display: flex;
+  margin-right: 10%;
+}
+.container-navigation-3 {
+  display: flex;
+  margin-right: 10%;
+}
+.container-navigation-4 {
+  display: flex;
+  margin-right: 10%;
+}
+.container-navigation-5 {
+  display: flex;
+}
+
+.button-style-navigation {
+  font-size: 21px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+  background: none;
+  border: none;
+}
+/* End Navigation Bar Styling */
+/* Start List-item Styling */
+.dropdown-menu-2 {
+  background-color: white;
+  width: 180px;
+  position: absolute;
+  perspective: 1000px;
+  display: none;
+  border-radius: 20px;
+  border: solid rgb(88, 65, 37) 1px;
+}
+
+.photography-dropdown {
+  margin-left: -33px;
+}
+.SEO-dropdown {
+  margin-left: -75px;
+}
+
+.about-dropdown {
+  margin-left: -65px;
+}
+
+.navigation-listitem {
+  list-style: none;
+  text-align: center;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 14px;
+}
+
+.dropdown-items-2 {
+  display: contents;
+}
+.dropdown-items-2:link,
+.dropdown-items-2:visited {
+  color: rgb(39, 22, 17);
+  font-size: 15px;
+  text-decoration: none;
+}
+.dropdown-items-2:hover,
+.dropdown-items-2:active {
+  font-weight: bold;
+}
+/* End dropdown navigation */
+/* end container one */
+/* -------------------------------------------------------------------------------------------------- */
+
+/* Container-two */
+.container-two {
+  width: 100%;
+  margin: 0;
+  padding-top: 130px;
+  padding-bottom: 290px;
+  animation: transitionIn 0.75s;
+  /* background-attachment: fixed; */
+  max-width: 100%;
+}
+
+.text-container {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 17px;
+  color: rgb(78, 50, 32);
+  width: 55%;
+  text-align: start;
+  line-height: 1.6;
+  margin-left: 19.5%;
+  padding: 50px;
+  background-color: white;
+  /* border: solid 2px rgb(88, 65, 37); */
+}
+
+.h1-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 38px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: rgb(78, 50, 32);
+}
+.h2-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  margin-bottom: 8px;
+  width: 100%;
+  color: rgb(78, 50, 32);
+}
+
+.education-link:link,
+.education-link:visited {
+  font-size: 18px;
+  color: rgb(78, 50, 32);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.education-link:hover,
+.education-link:active {
+  text-decoration: underline;
+}
+
+.code-academy-link:link,
+.code-academy-link:visited {
+  font-size: 18px;
+  color: rgb(78, 50, 32);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.code-academy-link:hover,
+.code-academy-link:active {
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 40px;
+  text-align: center;
+}
+
+.bold-words {
+  font-weight: bold;
+}
+
+.list-style {
+  list-style: circle;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.portrait-isabel {
+  width: 170px;
+  height: 210px;
+  float: right;
+  border-radius: 10%;
+  margin: 30px;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* Services Container */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; /* space between items */
+  font-family: "Playfair Display", serif;
+  padding: 5rem;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+/* Responsive stacking for mobile */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Headings */
+.h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.services-container > div:last-child h3 {
+  color: rgb(78, 50, 32);
+}
+
+/* Paragraphs */
+.paragraph,
+.last-p {
+  font-family: "DM Serif Display", serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0 auto 1rem auto; /* center block with auto margins */
+  max-width: 90%;
+}
+
+.paragraph {
+  color: white;
+}
+
+.last-p {
+  color: rgb(78, 50, 32);
+}
+
+.seo-link:link,
+.seo-link:visited {
+  color: rgb(253, 230, 222);
+  text-decoration: underline;
+}
+.seo-link:hover,
+.seo-link:active {
+  color: white;
+  text-decoration: none;
+}
+
+.photo-link:link,
+.photo-link:visited {
+  color: rgb(78, 50, 32);
+  text-decoration: underline;
+}
+.photo-link:hover,
+.photo-link:active {
+  color: rgb(78, 50, 32);
+  text-decoration: none;
+}
+
+/* List items */
+.web-service-list-items {
+  color: white;
+  font-size: 17px;
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  text-align: left;
+  margin: 0 auto 1rem auto;
+  max-width: 90%;
+}
+
+/* Service Boxes */
+.service-one,
+.service-two,
+.service-three,
+.service-four {
+  border-radius: 150px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-height: 250px; /* enough space for title + hidden text */
+  transition: background-color 0.3s ease;
+}
+
+/* Keep each card’s background color */
+.service-one {
+  /* background-color: rgb(253, 222, 222); */
+  background-color: rgb(212, 124, 98);
+}
+.service-two {
+  background-color: rgb(213, 225, 245);
+  background-color: rgb(35, 26, 20);
+  background-color: rgb(11, 11, 36);
+}
+.service-three {
+  background-color: rgb(253, 230, 222);
+  background-color: rgb(248, 205, 191);
+}
+.service-four {
+  background-color: rgb(255, 244, 227);
+  background-color: rgb(253, 237, 215);
+}
+
+/* Title always visible */
+.service-one .h3,
+.service-two .h3,
+.service-three .h3,
+.service-four .h3 {
+  margin-bottom: 0;
+  z-index: 2;
+  position: relative;
+}
+
+/* Hide text initially */
+.service-one .paragraph,
+.service-two .paragraph,
+.service-three .paragraph,
+.service-four .paragraph,
+.service-one .last-p,
+.service-two .last-p,
+.service-three .last-p,
+.service-four .last-p,
+.service-three .web-service-list-items {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+/* Reveal text on hover */
+.service-one:hover .paragraph,
+.service-two:hover .paragraph,
+.service-three:hover .paragraph,
+.service-four:hover .paragraph,
+.service-one:hover .last-p,
+.service-two:hover .last-p,
+.service-three:hover .last-p,
+.service-four:hover .last-p,
+.service-three:hover .web-service-list-items {
+  opacity: 1;
+  max-height: 1000px; /* large enough to show all text */
+  margin-top: 1rem;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* Slideshow container */
+.portfolio-container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* The outer div */
+.portfolio-div {
+  width: 100vw;
+  height: cover;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* The moving track */
+.image-track {
+  display: flex;
+  width: calc(408px * 17); /* Adjust this based on the number of images */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual image styling */
+.image-track img {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  flex-shrink: 0;
+  padding: 0.5% 0.1% 2% 1%;
+}
+
+/* Navigation buttons */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(236, 220, 200, 0.5);
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* -------------------------------------------------------------------------------------------------- */
+.reviews-container {
+  width: 40%;
+  padding: 0 20px 90px 20px;
+  margin-left: 30%;
+  font-size: 30px;
+  color: rgb(78, 50, 32);
+}
+/* -------------------------------------------------------------------------------------------------- */
+/* container three - footer */
+.container-three {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+  color: rgb(78, 50, 32);
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.container-left {
+  display: grid;
+  grid-column: 1;
+}
+
+.footer-images-container {
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+}
+
+.image-one {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.image-two {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.image-three {
+  width: 20px;
+  height: 20px;
+}
+
+.container-right {
+  display: grid;
+  grid-column: 3;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+/* Phone Screen settings */
+@media screen and (max-width: 550px) and (orientation: portrait) {
+  Body {
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    cursor: grab;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* Mobile - Start dropdown menu */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* start mobile navigation */
+  .container-one {
+    background-image: url(images/swim-jump-pentax67.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+  }
+
+  .page-title-style {
+    color: white;
+    text-shadow: none;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .ismaro-colour {
+    color: white;
+    text-shadow: none;
+  }
+  /* navigation animations */
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(14px);
+      transform: translateY(13px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+  .dropdown-2:hover .dropdown-menu-2--animated {
+    display: block;
+    -webkit-animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  /* Mobile - End Animation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - Start Navigation Bar Styling */
+  .navigation-2-container {
+    display: none;
+  }
+
+  /* Hamburger lines */
+  .hamburger {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+    margin-left: 5%;
+    border-radius: 50px;
+    margin-top: 78%;
+  }
+  /* Hamburger button */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background-color: rgb(78, 50, 32);
+    border-radius: 3px;
+    transition: all 0.4s ease;
+    transform-origin: center;
+  }
+
+  /* Hamburger active (X) state */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10.5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10.5px);
+  }
+
+  /* Mobile menu panel */
+  .mobile-menu {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    /* You can adjust width here */
+    width: 90%;
+    position: relative;
+    z-index: 9999;
+  }
+
+  /* When open, expand max-height to show menu */
+  .mobile-menu.open {
+    max-height: 1500px; /* or large enough to show full menu */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* menu items styling remain same */
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submenu-toggle {
+    font-family: "Playfair Display", serif;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px 0;
+  }
+  .mobile-menu a {
+    font-family: "Playfair Display", serif;
+    color: rgb(78, 50, 32);
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+  }
+  .menu-item-cv {
+    display: block;
+    font-size: 20px;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .mobile-menu,
+  .mobile-menu ul,
+  .mobile-menu li,
+  .mobile-menu a {
+    text-align: left;
+  }
+
+  /* Submenu styling */
+  .submenu {
+    display: none;
+    padding-left: 15px;
+  }
+
+  .submenu.open {
+    display: block;
+  }
+  /* Mobile - End navigation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - beginning container two */
+
+  .container-two {
+    width: 100%;
+    height: 100%;
+    padding-top: 25%;
+    padding-bottom: 15%;
+    background-image: none;
+    /* background-color: rgb(255, 244, 227); */
+    /* background-color: rgb(213, 225, 245); */
+    background-color: white;
+  }
+  .h2-styling {
+    font-family: "DM Serif Display", serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    color: rgb(78, 50, 32);
+  }
+  .text-container {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    color: rgb(78, 50, 32);
+    text-align: left;
+    /* background-color: rgb(202, 218, 246);
+    background-color: rgb(213, 225, 245); */
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+  }
+
+  .education-link:link,
+  .education-link:visited {
+    font-size: 18px;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+  }
+
+  .education-link:hover,
+  .education-link:active {
+    text-transform: none;
+    text-decoration: underline;
+  }
+  .background-wrap {
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: calc(150vw) calc(100vh);
+    -moz-background-size: calc(150vw) calc(100vh);
+    -o-background-size: calc(150vw) calc(100vh);
+    background-size: calc(150vw) calc(100vh);
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  .portrait-isabel {
+    width: 150px;
+    height: auto;
+    float: right;
+    border-radius: 10%;
+    margin: 30px;
+  }
+
+  /* -------------------------------------------------------------------------------------------------- */
+  /* Slideshow container */
+  .portfolio-container {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* The outer div */
+  .portfolio-div {
+    width: 100vw;
+    height: cover;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* The moving track */
+  .image-track {
+    display: flex;
+    width: calc(370px * 18); /* Adjust this based on the number of images */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Individual image styling */
+  .image-track img {
+    width: 340px;
+    height: 450px;
+    object-fit: cover;
+    flex-shrink: 0;
+    padding: 1.5% 0 1% 0.5%;
+  }
+
+  /* Navigation buttons */
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(236, 220, 200, 0.5);
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    border-radius: 50%;
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+  .next-btn {
+    right: 10px;
+  }
+
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Mobile - end container two */
+  /* ---------------------------------------------------------------------------------------------------*/
+  @media (max-width: 768px) {
+    /* Stack cards vertically */
+    .services-container {
+      grid-template-columns: 1fr !important; /* override grid for mobile */
+      padding-left: 5%;
+      padding-right: 5%;
+      font-family: "Playfair Display", serif;
+    }
+
+    /* Headings */
+    .h3,
+    .h3-2 {
+      font-family: "DM Serif Display", serif;
+      font-size: 28px;
+      font-weight: bold;
+      padding: 8% 0;
+      margin-bottom: 5%;
+      text-align: left;
+    }
+    .h3 {
+      color: white;
+    }
+    .h3-2 {
+      color: rgb(78, 50, 32);
+    }
+
+    /* Paragraphs and lists - full width for readability */
+    .paragraph,
+    .last-p,
+    .web-service-list-items {
+      width: 100%;
+      max-width: none;
+      margin-left: 0;
+      font-size: 19px;
+      line-height: 1.6;
+      text-align: left;
+      opacity: 1 !important; /* force visible */
+      max-height: none !important;
+    }
+    .paragraph {
+      color: white;
+    }
+    .last-p {
+      color: rgb(78, 50, 32);
+    }
+
+    /* Remove fixed heights so content flows naturally */
+    .service-one,
+    .service-two,
+    .service-three,
+    .service-four {
+      min-height: auto;
+      height: auto;
+      padding: 1.5rem;
+      border-radius: 0 10% 0 10%;
+      overflow: visible;
+    }
+
+    /* Keep backgrounds per service */
+    .service-one {
+      background-color: rgb(35, 26, 20);
+    }
+    .service-two {
+      background-color: rgb(212, 124, 98);
+    }
+    .service-three {
+      background-color: rgb(50, 72, 54);
+      background-color: rgb(248, 205, 191);
+    }
+    .service-four {
+      background-color: rgb(253, 237, 215);
+    }
+  }
+  .reviews-container {
+    width: 85%;
+    padding: 100px 0 5px 0;
+    margin-left: 7.5%;
+    font-size: 30px;
+    color: rgb(78, 50, 32);
+  }
+
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - beginning footer */
+  .container-three {
+    font-family: "DM Serif Display", serif;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(78, 50, 32);
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  .desktop-style-1,
+  .desktop-style-2 {
+    display: block;
+    margin: none;
+  }
+
+  .mobile-paragraph-styling-1 {
+    margin-bottom: 5%;
+    display: block;
+    margin-left: -10px;
+  }
+  .mobile-image-styling {
+    flex-direction: row;
+    align-items: center;
+    display: block;
+  }
+  .mobile-paragraph-styling-2 {
+    margin-bottom: 5%;
+    display: block;
+  }
+
+  .footer-images-container {
+    margin-bottom: 20px;
+  }
+  .image-one {
+    width: 20px;
+    height: 20px;
+    margin-top: 2%;
+  }
+  .image-two {
+    width: 20px;
+    height: 20px;
+    margin-top: 2%;
+  }
+  .image-three {
+    width: 20px;
+    height: 20px;
+    margin-top: 2%;
+  }
+}
+
+/* .................................................................................................... */
+/* @media screen and (max-width: 992px) {
+} */

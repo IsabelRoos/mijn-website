@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Isabel Dröge" />
+    <link href="cecilia-beaux.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&family=Noto+Serif+Display:wght@300;600;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="background-image-div">
+      <div class="container-one">
+        <header>
+          <!---------------------------------------------------------------------------------------------------------------------->
+          <div
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="navigation-2-container">
+            <div class="container-navigation-1">
+              <li class="dropdown-2 no-touch">
+                <button class="button-style-navigation">
+                  <a class="button-style-navigation" href="index.html">Home</a>
+                </button>
+              </li>
+            </div>
+
+            <div class="container-navigation-2">
+              <li class="dropdown-2 no-touch">
+                <button class="button-style-navigation">Photography</button>
+                <div class="photography-dropdown">
+                  <ul class="dropdown-menu-2 dropdown-menu-2--animated">
+                    <li class="navigation-listitem">
+                      <a class="dropdown-items-2" href="photography.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li class="navigation-listitem">
+                      <a
+                        class="dropdown-items-2"
+                        href="wedding-photography-south-of-france.html"
+                        >Wedding photography South of france</a
+                      >
+                    </li>
+                    <li class="navigation-listitem">
+                      <a
+                        class="dropdown-items-2"
+                        href="evenement-fotografie.html"
+                        >Evenement Fotografie</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+
+            <div class="container-navigation-3">
+              <li class="dropdown-2 no-touch">
+                <button class="button-style-navigation">SEO</button>
+                <div class="SEO-dropdown">
+                  <ul class="dropdown-menu-2 dropdown-menu-2--animated">
+                    <li class="navigation-listitem">
+                      <a
+                        class="dropdown-items-2"
+                        href="seo-teksten-laten-schrijven.html"
+                        >SEO teksten laten schrijven</a
+                      >
+                    </li>
+                    <li class="navigation-listitem">
+                      <a
+                        class="dropdown-items-2"
+                        href="freelance-seo-specialist.html"
+                        >Freelance SEO specialist inhuren</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+
+            <div class="container-navigation-4">
+              <li class="dropdown-2 no-touch">
+                <button class="button-style-navigation">
+                  <a class="button-style-navigation" href="magazine.html"
+                    >Magazine
+                  </a>
+                </button>
+              </li>
+            </div>
+
+            <div class="container-navigation-5">
+              <li class="dropdown-2 no-touch">
+                <button class="button-style-navigation">About</button>
+                <div class="about-dropdown">
+                  <ul class="dropdown-menu-2 dropdown-menu-2--animated">
+                    <li class="navigation-listitem">
+                      <a class="dropdown-items-2" href="bio-isabel-droge.html"
+                        >Bio</a
+                      >
+                    </li>
+                    <li class="navigation-listitem">
+                      <a class="dropdown-items-2" href="education.html">CV</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+
+            <div class="container-navigation-6">
+              <li class="dropdown-2 no-touch">
+                <button class="button-style-navigation">
+                  <a class="button-style-navigation" href="contact.html"
+                    >Contact
+                  </a>
+                </button>
+              </li>
+            </div>
+          </div>
+          <!---------------------------------------------------------------------------------------------------------------------->
+        </header>
+      </div>
+
+      <!-- Mobile menu (hidden by default) -->
+      <nav class="mobile-menu" id="mobileMenu">
+        <ul>
+          <!-- HOME -->
+          <li class="menu-item-home">
+            <a href="index.html">Home</a>
+          </li>
+
+          <!-- Photography -->
+          <li>
+            <button class="submenu-toggle">Photography</button>
+            <ul class="submenu">
+              <li><a href="photography.html">Introduction</a></li>
+              <li>
+                <a href="evenement-fotografie.html">Evenement fotografie</a>
+              </li>
+              <li>
+                <a href="wedding-photography-south-of-france.html"
+                  >Wedding Photography South of France</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- SEO -->
+          <li>
+            <button class="submenu-toggle">SEO</button>
+            <ul class="submenu">
+              <li>
+                <a href="seo-teksten-laten-schrijven.html"
+                  >SEO teksten laten schrijven</a
+                >
+              </li>
+              <li>
+                <a href="freelance-seo-specialist.html"
+                  >Freelance SEO specialist inhuren</a
+                >
+              </li>
+            </ul>
+          </li>
+          <!-- Magazine-->
+          <li class="menu-item-cv">
+            <a href="magazine.html">Magazine</a>
+          </li>
+          <!-- CV -->
+          <li>
+            <button class="submenu-toggle">About</button>
+            <ul class="submenu">
+              <li>
+                <a href="bio-isabel-droge.html">bio</a>
+              </li>
+              <li>
+                <a href="education.html">CV</a>
+              </li>
+            </ul>
+          </li>
+          <!-- Contact -->
+          <li class="menu-item-cv">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div data-tf-live="01JSKJCE6X6FV2KY1HFHPCZHY1"></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
+
+      <!-- Beginning Container two  -->
+      <div class="container-two">
+        <div class="text-container">
+          <h1 class="h1-styling">
+            Cecilia Beaux: the life and work of an American Portraitist
+          </h1>
+          <p>
+            <em
+              >Cecilia Beaux was a prominent American portraitist, who became
+              known for her realistic and elegant depictions of the
+              bourgeoisie.</em
+            >
+          </p>
+          <img
+            src="images/who-was-cecilia-beaux.webp"
+            alt="Cecilia Beaux, Twilight Confidences 1888, and self portrait, 1894"
+            class="cecilia-beaux-images"
+          />
+          <p>
+            Cecilia Beaux (1855-1942) was a very successful female painter, who
+            managed to obtain a career equivalent to that of many male artists
+            of her time. She won several prizes for her art and received
+            numerous prestigious commissions. She was asked to paint a portrait
+            of First Lady Edith Roosevelt. Read on to learn what inspired
+            Cecilia to become an artist and how she managed to become so
+            well-known in a male-dominated art world.
+          </p>
+
+          <h2 class="h2-styling">Cecilia Beaux’s Early Life</h2>
+          <img
+            src="images/cecilia-beaux-portrait-picture.jpeg"
+            alt=""
+            class="cecilia-beaux-images"
+          />
+          <p>
+            Cecilia Beaux was born in Philadelphia to a middle-class family, as
+            the child of Jean Adolphe Beaux and Cecilia Kent Leavitt. Beaux’s
+            father was a silk manufacturer of French descent, while her mother,
+            who was the daughter of a prominent businessman in New York, worked
+            as a teacher. Beaux had an older sister named Aimée Ernesta Etta.
+          </p>
+          <p>
+            Beaux’s mother passed away during childbirth after contracting a
+            puerperal fever. Heavily grieving the loss of his wife, Jean Adolphe
+            decided to return to France and leave his daughters with their
+            maternal grandmother and aunts Eliza and Emily. The fact that Beaux
+            was always referred to by him as Leilie, was an indication of how
+            much he struggled with the loss of his wife, who was also called
+            Cecilia.
+          </p>
+          <p>
+            As it turned out, Beaux’s grandmother and aunts were remarkably
+            progressive women who saw real value in the education of girls as
+            well as in any artistic pursuits. One of Beaux’s aunts even worked
+            as a music teacher, financially contributing to the household. This
+            upbringing was especially beneficial to Beaux, who showed a talent
+            for drawing. Perhaps she inherited it from her father, who drew
+            fanciful sketches of animals for his daughters when he came to
+            Philadelphia.
+          </p>
+          <p>
+            However, as it turned out, Beaux’s interest in the arts went much
+            deeper than that of her father. This became obvious to Beaux when
+            she was attending Misses Lyman’s School, between the age of fourteen
+            and sixteen. During these years, Beaux couldn’t afford the extra
+            fees needed for art classes. Yet it was the absence of art education
+            that made her even more aware of her desire to pursue an artistic
+            career.
+          </p>
+          <img
+            src="images/cecilia-beaux-self-portrait.jpg"
+            alt="Self-Portrait by Cecilia Beaux, 1894, National Museum of Women in the Arts, Washington D.C."
+            class="cecilia-beaux-images"
+          />
+          <p>
+            When Beaux finished her education at the Lyman’s School her whole
+            family agreed that she must get into an art school. One person, in
+            particular, proved very important to Beaux. It was William Foster
+            Biddle, also referred to as Uncle Willie, who was married to her
+            aunt Emily. The two sisters lived with the married couple. Biddle, a
+            very kind and generous man, financially supported Beaux’s education
+            at the Lyman’s School and continued to support her art classes.
+          </p>
+          <p>
+            He even arranged for her to study with their distant relative
+            Catherine Drinker Janvier, who was an accomplished artist and
+            writer. Later, these studies were followed by training at Francis
+            Adolf van der Wielen’s Art School. From this Dutch realist painting,
+            Beaux learned about linear and aerial perspective and drawing
+            shadows. Finally, she also received private lessons from William
+            Sartain. Beaux soon developed into a skilled painter.
+          </p>
+          <img
+            src="images/cecilia-beaux-photograph.jpeg"
+            alt="Portrait
+          photograph of Cecilia Beaux, date unknown, via Archives of American
+          Art, Smithsonian Institution, Washington D.C."
+            class="cecilia-beaux-images"
+          />
+          <p>
+            Although raised by the same people, Cecilia Beaux and her sister
+            Etta had different interests and ended up living very different
+            lives. Etta got married and became the mother of six children. Beaux
+            however decided to devote herself to art, so she decided not to
+            marry. After all, marriage meant that a woman had to be devoted to
+            her husband, as well as to her future children. Fortunately, her
+            family supported her chosen path.
+          </p>
+
+          <h2 class="h2-styling">
+            Cecilia Beaux’s Life as a Professional Artist
+          </h2>
+          <img
+            src="images/cecilia-beaux-les-derniers-jour-d-enfance.jpeg"
+            alt="Les derniers jours d’enfance (The last days of infancy) by Cecilia Beaux, 1883-1885"
+            class="cecilia-beaux-images"
+          />
+          <p>
+            Cecilia Beaux’s art education was just the starting point of her
+            artistic endeavors. When Van der Wielen handed over his art school
+            to Catherine Drinker, she in turn gave Beaux her old position as the
+            drawing teacher at Miss Sandford’s School. During this period, when
+            Beaux was eighteen years old, she also started giving out private
+            drawing lessons.
+          </p>
+          <p>
+            In 1883, after a decade of teaching, Beaux opened a studio in
+            Philadelphia, where she created many paintings. Her first major work
+            was a full-length portrait of her sister and nephew titled Les
+            derniers jour d’enfance (The last days of Infancy). Throughout the
+            years, her works were exhibited in various places like the
+            Pennsylvania Academy of the Fine Arts in 1885 or the Paris Salon in
+            1886 and 1896.
+          </p>
+          <p>
+            Drawn to Europe, Beaux decided to study there in 1888. She took an
+            introductory class at the Académie Julien in Paris, as well as
+            classes from artists like William-Adolphe Bouguereau and Tony Robert
+            Fleury. She painted Twilight Confidences during her summer in
+            France. When Beaux returned to Philadelphia, she was seen as one of
+            the best portrait painters in the city. Subsequently, she was
+            appointed as the first female instructor at the Pennsylvania Academy
+            of Fine Art in 1895. Here, she would teach drawing and painting for
+            the next twenty years.
+          </p>
+          <img
+            src="images/cecilia-beaux-twilight-confidences.jpeg"
+            alt="Cecilia Beaux, Twilight Confidences, 1888"
+            class="cecilia-beaux-images"
+          />
+          <p>
+            Different to what some expect, Beaux’s life and career didn’t show
+            many similarities to that of Mary Cassatt. While both Beaux and
+            Cassatt were born in Philadelphia and painted in styles that were
+            based on impressionism, they ended up working in very different
+            places. They also had different theoretical viewpoints, as well as
+            different approaches to art. The fact that they were both ambitious
+            women artists from Philadelphia remains the only similarity between
+            the two.
+          </p>
+          <p>
+            Beaux’s works instead show more similarities to those made by some
+            of her male colleagues like John Singer Sargent and William Merritt
+            Chase. Sargent and Beaux were both talented portrait painters who
+            worked in similar styles, while Chase and Beaux were both involved
+            in teaching and jurying. The works of Chase and Beaux also display a
+            range of stylistic and thematic similarities.
+          </p>
+          <p>
+            Just like Sargent and Chase, Beaux was inspired by the French
+            Impressionists. Still, she created her very own distinctive style.
+            Her move to New York in 1900, where she would live during the winter
+            months, marked the beginning of an important phase of her career.
+            Her friend Richard Gilder, the editor-in-chief of the literary
+            magazine The Century, helped Beaux promote her work. He also
+            introduced her to the elite members of society. This led Beaux to
+            create a portrait of First Lady Edith Roosevelt and her daughter, a
+            portrait of French prime minister George Clemenceau, and a sketch of
+            President Theodore Roosevelt during a visit to the White House.
+          </p>
+
+          <p>
+            Read the full article on
+            <a
+              href="https://www.thecollector.com/who-was-cecilia-beaux/"
+              target="_blank"
+              class="collector-link"
+              >www.thecollector.com</a
+            >
+            and discover more about the Stylistic aspects of Cecilia Beaux's
+            art.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-three">
+        <div class="desktop-style-1">
+          <p class="mobile-paragraph-styling-1">isabeldroge95@outlook.com</p>
+        </div>
+
+        <div class="mobile-image-styling">
+          <a
+            href="https://www.instagram.com/isabel.roos.marijke/"
+            target="_blank"
+          >
+            <img
+              src="images/instagram.jpg"
+              alt="Instagram new logo"
+              class="image-one"
+          /></a>
+
+          <a
+            href="https://www.instagram.com/fin.de.siecle.art/"
+            target="_blank"
+          >
+            <img
+              src="images/instagram-old-logo.jpg"
+              alt="instagram old logo"
+              class="image-two"
+          /></a>
+
+          <a
+            href="https://www.linkedin.com/in/isabel-dr%C3%B6ge-02b89315a/"
+            target="_blank"
+          >
+            <img
+              src="images/linkedin-logo.png"
+              alt="linked logo"
+              class="image-three"
+          /></a>
+        </div>
+        <div class="desktop-style-2">
+          <p class="mobile-paragraph-styling-2">
+            copyright &copy; 2026 by Isabel Dröge
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

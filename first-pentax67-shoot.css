@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+Body {
+  /* background-color: rgb(255, 254, 247); */
+  background-color: white;
+  font-size: 16px;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  cursor: grab;
+  position: relative;
+}
+
+.background-image-div {
+  background-image: url(images/shoot-ava/pentax67-10.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.image-styling {
+  width: 190px;
+  height: 235px;
+  border-radius: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: solid;
+  border-color: rgb(88, 65, 37);
+}
+
+.image-styling:hover {
+  transform: none;
+}
+
+/* Container one */
+.container-one {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.h1-style {
+  font-family: "DM Serif Display", serif;
+  color: white;
+  padding-top: 2%;
+  margin-bottom: 10px;
+  font-size: 45px;
+}
+
+/* Start dropdown menu */
+/* Start Animation */
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+    transform: translateY(13px);
+  }
+}
+.dropdown-2:hover .dropdown-menu-2--animated {
+  display: block;
+  -webkit-animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+/* End Animation */
+/* Default: hide hamburger for desktop */
+.hamburger {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+/* Start Navigation Bar Styling */
+.navigation-2-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-2 {
+  list-style: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: all 0.8s linear;
+}
+.container-navigation-1 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-2 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-3 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-4 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-5 {
+  display: flex;
+  margin-right: 8%;
+}
+.container-navigation-6 {
+  display: flex;
+}
+
+.button-style-navigation {
+  font-size: 21px;
+  text-decoration: none;
+  color: rgb(148, 154, 97);
+  font-weight: bold;
+  font-family: "DM Serif Display", serif;
+  background: none;
+  border: none;
+}
+/* End Navigation Bar Styling */
+/* Start List-item Styling */
+.dropdown-menu-2 {
+  background-color: white;
+  width: 180px;
+  position: absolute;
+  perspective: 1000px;
+  display: none;
+  border-radius: 20px;
+  border: solid rgb(88, 65, 37) 1px;
+  font-family: "Playfair Display", serif;
+}
+
+.photography-dropdown {
+  margin-left: -30px;
+}
+.SEO-dropdown {
+  margin-left: -73px;
+}
+.about-dropdown {
+  margin-left: -58px;
+}
+
+.navigation-listitem {
+  list-style: none;
+  text-align: center;
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 14px;
+}
+
+.dropdown-items-2 {
+  display: contents;
+}
+.dropdown-items-2:link,
+.dropdown-items-2:visited {
+  color: rgb(88, 65, 37);
+  font-size: 15px;
+  text-decoration: none;
+}
+.dropdown-items-2:hover,
+.dropdown-items-2:active {
+  font-weight: bold;
+}
+/* End dropdown navigation */
+/* end container one */
+
+/* ------------------------------------------------------------------------------ */
+
+/* Container two */
+.container-two {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 250px;
+  animation: transitionIn 0.75s;
+}
+
+@media (min-width: 768px) {
+  .container-two {
+    background-attachment: fixed;
+  }
+}
+
+.text-container {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  text-align: left;
+  color: rgb(88, 65, 37);
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  line-height: 1.6;
+  width: 50%;
+  margin-left: 22%;
+}
+
+.h2-styling {
+  font-family: "DM Serif Display", serif;
+  font-size: 32px;
+  color: rgb(88, 65, 37);
+  margin-bottom: 20px;
+}
+
+.h3-style {
+  font-family: "DM Serif Display", serif;
+  color: rgb(88, 65, 37);
+  font-size: 26px;
+  margin-bottom: 3px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* p:last-child {
+  margin-bottom: 30;
+} */
+
+/* Container Three - Images */
+.container-three {
+  padding: 80px 0;
+  animation: transitionIn 0.75s;
+}
+
+.photos-introduction {
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 70px;
+  font-size: 18px;
+  color: rgb(88, 65, 37);
+  line-height: 1.5;
+}
+
+.video-div {
+  width: 95%;
+  padding: 0% 2.5% 4% 2.5%;
+  background-color: white;
+}
+
+.youtube-video {
+  width: 100%;
+  height: 900px;
+}
+
+.fujifilm-page-link:link,
+.fujifilm-page-link:visited {
+  color: rgb(88, 65, 37);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.fujifilm-page-link:hover,
+.fujifilm-page-link:active {
+  text-transform: uppercase;
+}
+
+/* images */
+/* 4x5 */
+.pentax67-1,
+.pentax67-2,
+.pentax67-3,
+.pentax67-5,
+.pentax67-6,
+.pentax67-8,
+.pentax67-9 {
+  height: 380px;
+  width: 320px;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+/* 4x5 zonder margin-right */
+.pentax67-4,
+.pentax67-7,
+.pentax67-10 {
+  height: 380px;
+  width: 320px;
+  margin-bottom: 2%;
+}
+
+img:hover {
+  transform: scale(2);
+}
+
+/* Container four - Footer */
+.container-four {
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+  color: rgb(88, 65, 37);
+  padding-top: 30px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop-style-1 {
+  display: flex;
+  margin-left: 24%;
+  margin-right: 10%;
+}
+.desktop-style-2 {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.image-one {
+  width: 20px;
+  height: 20px;
+}
+
+.image-two {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.image-three {
+  width: 20px;
+  height: 20px;
+}
+
+/* ........................................................................................................................... */
+
+/* Phone Screen settings */
+@media screen and (max-width: 481px) {
+  /* dropdown menu start */
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(13px);
+      transform: translateY(13px);
+    }
+  }
+
+  .container-one {
+    background-image: url(images/shoot-ava/pentax67-10.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-position: top;
+    height: 600px;
+    position: relative;
+  }
+  .h1-style {
+    margin-bottom: 380px;
+    color: white;
+    text-shadow: none;
+  }
+  .background-image-div {
+    background-image: none;
+  }
+  /* Mobile - End Animation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - Start Navigation Bar Styling */
+  .navigation-2-container {
+    display: none;
+  }
+
+  /* Hamburger lines */
+  .hamburger {
+    width: 30px;
+    height: 25px;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    bottom: 20px; /* distance from bottom edge of container-one */
+    left: 20px; /* distance from left edge of container-one */
+    z-index: 1000; /* ensure it’s above other elements */
+  }
+  /* Hamburger button */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background: rgb(78, 50, 32);
+    border-radius: 3px;
+    transition: all 0.4s ease;
+    transform-origin: center;
+  }
+
+  /* Hamburger active (X) state */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 10.5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -10.5px);
+  }
+
+  /* Mobile menu panel */
+  .mobile-menu {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    /* You can adjust width here */
+    width: 90%;
+    position: relative;
+    z-index: 9999;
+  }
+
+  /* When open, expand max-height to show menu */
+  .mobile-menu.open {
+    max-height: 1500px; /* or large enough to show full menu */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* menu items styling remain same */
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .submenu-toggle {
+    font-family: "Playfair Display", serif;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 20px;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .mobile-menu a {
+    font-family: "Playfair Display", serif;
+    color: rgb(78, 50, 32);
+    text-decoration: none;
+    background: white;
+    border: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+  }
+  .menu-item-home a,
+  .menu-item-cv a {
+    display: block;
+    font-size: 20px;
+    color: rgb(78, 50, 32);
+    font-weight: bold;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  .mobile-menu,
+  .mobile-menu ul,
+  .mobile-menu li,
+  .mobile-menu a {
+    text-align: left;
+  }
+  /* Submenu styling */
+  .submenu {
+    display: none;
+    padding-left: 15px;
+  }
+
+  .submenu.open {
+    display: block;
+  }
+  /* Mobile - End navigation */
+  /* ---------------------------------------------------------------------------------------------------*/
+  /* Mobile - beginning container two */
+  .container-two {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    animation: transitionIn 0.75s;
+  }
+
+  .text-container {
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(88, 65, 37);
+    background-color: white;
+    border: none;
+    padding: 30px;
+    line-height: 1.6;
+    width: 80%;
+    margin-left: 2.3%;
+    margin-right: 1%;
+  }
+
+  .h2-styling {
+    font-family: "DM Serif Display", serif;
+    font-size: 28px;
+    color: rgb(88, 65, 37);
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  .photos-introduction {
+    width: 90%;
+    margin-left: 6%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: rgb(88, 65, 37);
+    line-height: 1.5;
+    text-align: left;
+  }
+  .video-div {
+    padding: 0% 2% 10% 2%;
+    background-color: white;
+  }
+  .youtube-video {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Mobile - end container three */
+  /* ---------------------------------------------------------------------------------------------------*/
+  .container-three {
+    padding-top: 10px;
+  }
+  /* Mobile - beginning footer */
+
+  .container-four {
+    font-family: "DM Serif Display", serif;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(88, 65, 37);
+    /* background-color: rgb(255, 254, 248); */
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  .desktop-style-1,
+  .desktop-style-2 {
+    display: block;
+    margin: none;
+  }
+
+  .mobile-paragraph-styling-1 {
+    margin-bottom: 5%;
+    display: block;
+    margin-left: -70px;
+  }
+  .mobile-image-styling {
+    flex-direction: row;
+    align-items: center;
+    display: block;
+  }
+  .mobile-paragraph-styling-2 {
+    margin-bottom: 5%;
+    display: block;
+  }
+
+  .image-one {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .image-two {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .image-three {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+}
